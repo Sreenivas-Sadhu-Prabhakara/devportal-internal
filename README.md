@@ -48,12 +48,20 @@ lib/
   auth/      AuthCubit (hardcoded creds) + login gate
   features/  dashboard · products (+editor) · developers · approvals · analytics · settings
   widgets/   AdminTable · PageHeader · ContentArea
+fonts/                            Bundled Roboto (Apache-2.0) — see below
 ```
+
+The **Roboto** family is bundled and pinned as the default font. Flutter Web
+(CanvasKit) otherwise fetches the default font from `fonts.gstatic.com` at
+runtime, so a network that blocks that CDN — a corporate proxy, an air-gapped
+deploy — would render the console with **no text**. Bundling keeps it
+fully self-contained.
 
 ## Verify
 
 ```bash
 flutter analyze   # clean
-flutter test      # login gate + dashboard smoke tests
-flutter build web # compiles
+flutter test      # login gate + dashboard + full e2e journeys
+flutter build web # compiles (CanvasKit). Add --no-web-resources-cdn to also
+                  # host CanvasKit locally for a 100% offline bundle.
 ```

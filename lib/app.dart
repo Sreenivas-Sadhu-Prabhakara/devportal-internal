@@ -20,6 +20,13 @@ class _AdminAppState extends State<AdminApp> {
   late final AuthCubit _auth = AuthCubit();
   late final GoRouter _router = buildRouter(_auth);
 
+  // Pin the bundled Roboto family so text renders without a runtime CDN fetch
+  // (see fonts in pubspec.yaml). The shared theme leaves the family default.
+  static final ThemeData _theme = AppTheme.dark.copyWith(
+    textTheme: AppTheme.dark.textTheme.apply(fontFamily: 'Roboto'),
+    primaryTextTheme: AppTheme.dark.primaryTextTheme.apply(fontFamily: 'Roboto'),
+  );
+
   @override
   void dispose() {
     _auth.close();
@@ -44,7 +51,7 @@ class _AdminAppState extends State<AdminApp> {
         child: MaterialApp.router(
           title: 'Developer Portal — Admin',
           debugShowCheckedModeBanner: false,
-          theme: AppTheme.dark,
+          theme: _theme,
           routerConfig: _router,
         ),
       ),
