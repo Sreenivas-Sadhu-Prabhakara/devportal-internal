@@ -9,9 +9,9 @@ architecture** · `go_router`. Reuses the [`devportal_shared`](../devportal-flut
 design system + domain + data layer.
 
 > **📖 System docs:** architecture, roadmap, integration path, deployment, and a
-> how-to live in the shared package at
-> [`../devportal-flutter-shared/docs`](../devportal-flutter-shared/docs)
-> (`docs/index.html`).
+> how-to are published at
+> <https://sreenivas-sadhu-prabhakara.github.io/devportal-flutter-shared/>
+> (source in [`../devportal-flutter-shared/docs`](../devportal-flutter-shared/docs)).
 
 ## Run it
 
