@@ -1,11 +1,11 @@
 {
-    "name": "devportal_internal",
-    "short_name": "devportal_internal",
+    "name": "Developer Portal · Admin",
+    "short_name": "DP Admin",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0B0B0F",
+    "theme_color": "#0B0B0F",
+    "description": "Admin console — publish API products, manage developers, work the approval queue, and watch org-wide analytics.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -8,6 +8,11 @@ Cinematic dark theme · **left-rail admin shell** · **Bloc/Cubit + clean
 architecture** · `go_router`. Reuses the [`devportal_shared`](../devportal-flutter-shared)
 design system + domain + data layer.
 
+> **📖 System docs:** architecture, roadmap, integration path, deployment, and a
+> how-to live in the shared package at
+> [`../devportal-flutter-shared/docs`](../devportal-flutter-shared/docs)
+> (`docs/index.html`).
+
 ## Run it
 
 ```bash
